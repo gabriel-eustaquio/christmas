@@ -50,13 +50,3 @@ img {
     max-width: 50ch;
   }
 }
-
-/* Estilizando elemento subir */
-.subir {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  padding: 1rem;
-  border-radius: 5px;
-  background-color: var(--cor-s1);
-}

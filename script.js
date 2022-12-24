@@ -18,29 +18,11 @@ function scrollSuave() {
 }
 scrollSuave();
 
-function elementoSubirTudo() {
-  const elementoSubir = document.createElement('a');
-  elementoSubir.innerText = '⮥';
-  elementoSubir.classList.add('subir');
-  elementoSubir.addEventListener('click', () => {
-    window.scrollTo({
-      top: document.querySelector('header h1').offsetTop,
-      behavior: 'smooth',
-    })
-  })
-
-  function ativarElementoSubir() {
-    document.body.appendChild(elementoSubir);
-  }
-
-  window.addEventListener('scroll', ativarElementoSubir);
-}
-elementoSubirTudo();
-
 function navegacaoTab() {
   const origemMenu = document.querySelectorAll('.js-origemmenu li'),
         origemConteudo = document.querySelectorAll('.js-origemconteudo li');
 
+  origemConteudo[0].classList.add('ativo');
 
   if(origemMenu.length && origemConteudo.length) {
     function ativarConteudo(index) {
