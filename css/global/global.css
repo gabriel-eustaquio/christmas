@@ -1,3 +1,7 @@
+body {
+  background-color: var(--cor-b1);
+}
+
 h1, ul, p, dl, dt, dd {
   margin: 0;
   padding: 0;
