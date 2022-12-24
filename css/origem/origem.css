@@ -1,0 +1,78 @@
+.origem {
+  margin-top: 8.125rem;
+}
+
+.origem h1 {
+  text-transform: uppercase;
+  color: var(--cor-p0);
+}
+
+.origem > div {
+  display: grid;
+  grid-template-columns: minmax(100px, 200px) 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.origem-menu li {
+  background-color: var(--cor-b2);
+  padding: 1rem;
+  position: relative;
+}
+
+.origem-menu li + li {
+  margin-top: 0.5rem;
+}
+
+.origem-menu li::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 20px;
+  background-color: var(--cor-p0);
+  position: absolute;
+  top: 0;
+  left: -8px;
+}
+
+.js .js-origemconteudo li {
+  display: none;
+}
+
+.js .js-origemconteudo li.ativo {
+  display: block;
+  animation: animarLi .7s forwards;
+}
+
+.js .origem {
+  opacity: 0;
+  transform: translate3d(20px, 0, 0);
+  transition: .5s;
+}
+
+.js .origem.animar {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes animarLi {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 720px) {
+  .origem {
+    margin-top: 5rem;
+  }
+
+  .origem > div {
+    grid-template-columns: 1fr;
+  }
+
+}

@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-family: 'PlayFair Display SC';
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-menu a {
+  padding: 0.5rem 1rem;
+}
+
+.header-menu a:hover {
+  background-color: var(--cor-b9);
+  color: var(--cor-b0);
+  border-radius: 3px;
+}
+
+@media (max-width: 720px) {
+  .header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

@@ -1,0 +1,45 @@
+.diversao-bg {
+  background-color: var(--cor-b9);
+}
+
+.diversao {
+  margin-top: 8.125rem;
+  padding: 2rem 0.5rem;
+}
+
+.diversao h1 {
+  color: var(--cor-b6);
+  text-transform: uppercase;
+}
+
+.diversao dt {
+  padding: 1rem;
+  background-color: var(--cor-b6);
+  margin-top: 1rem;
+}
+
+.diversao dd {
+  margin-top: 0.5rem;
+  color: var(--cor-b4);
+}
+
+.js .js-accordion dd {
+  display: none;
+}
+
+.js .js-accordion dd.ativo {
+  animation: animarDd 1s forwards;
+  display: block;
+}
+
+
+@keyframes animarDd {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 1000px;
+  }
+}
